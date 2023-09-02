@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- this is bootstrap css cdn -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <title>Blog page with Question answer </title>
+</head>
+
+<body>
+  <header>
+    <h2 class="text-center">This is question page</h2>
+  </header>
+  <main>
+    <div class="accordion" id="accordionPanelsStayOpenExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse"
+            data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+            aria-controls="panelsStayOpen-collapseOne">
+            01. Discuss the scope of var, let, and const
+          </button>
+        </h2>
+        <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"
+          aria-labelledby="panelsStayOpen-headingOne">
+          <div class="accordion-body">
+            <p> Answer:<Br>
+              var Scope: Variables declared with the 'var' keyword have function-level scope, which means they are accessible throughout the entire function in which they are defined. This scope also encompasses variables declared inside blocks within that function. An important characteristic of 'var' is hoisting, wherein variable declarations are moved to the top of their containing function or the global scope during code execution. This hoisting behavior can occasionally lead to unexpected issues, as variables can be accessed before they are explicitly declared in the code. <Br> <Br>
+
+              let Scope: In contrast to 'var,' variables declared with 'let' have block-level scope. This means they are confined to the nearest enclosing block, be it a loop, a conditional statement, or a function. A significant advantage of 'let' over 'var' is that 'let' declarations are not hoisted, making them accessible only after they are declared within their block. This block-scoping behavior helps prevent accidental variable redeclarations and enhances code clarity. <Br><Br>
+              
+              const Scope: Similar to 'let,' 'const' also provides block-level scope, limiting its accessibility to the nearest enclosing block. However, the primary purpose of 'const' is to declare constants, which implies that once a value is assigned to a 'const' variable, it cannot be reassigned. It's essential to note that the content of an object declared with 'const' can still be modified, but the variable itself cannot be assigned a new value. Like 'let,' 'const' declarations are not hoisted and adhere to block-scoping rules. To summarize, 'var' has function scope with hoisting, 'let' has block scope without hoisting, and 'const' has block scope and is used for declaring constants that cannot be reassigned. Understanding these scope distinctions is critical for writing predictable and maintainable JavaScript code.. </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2 -->
+      <div class="accordion " id="accordionPanelsStayOpenExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+            <button class=" text-center accordion-button" type="button" data-bs-toggle="collapse"
+              data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+              aria-controls="panelsStayOpen-collapseOne">
+              02. Tell us the use cases of null and undefined
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"
+            aria-labelledby="panelsStayOpen-headingOne">
+            <div class="accordion-body">
+              <p> Answer:<Br>
+                Null: This is employed to explicitly signify the absence of an object value or a purposeful empty value.
+                <br>
+                Undefined: It usually denotes the absence of a specifically assigned value, often occurring as the
+                default value for uninitialized variables or function parameters.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 3 -->
+      <div class="accordion" id="accordionPanelsStayOpenExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+              data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+              aria-controls="panelsStayOpen-collapseOne">
+              03. What do you mean by REST API?
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"
+            aria-labelledby="panelsStayOpen-headingOne">
+            <div class="accordion-body">
+              <p>Answer:<Br>
+                A REST API, which stands for Representational State Transfer Application Programming Interface, is a
+                method for constructing web services. These services utilize standard HTTP methods such as GET, POST,
+                PUT, and DELETE to communicate with resources, which are typically data objects. These resources are
+                identified by unique URLs. REST places a strong emphasis on simplicity, statelessness, and the ability
+                to support multiple data representations, such as JSON and XML. It is a popular choice for creating web
+                services due to its scalability and user-friendliness.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+
+</html>
